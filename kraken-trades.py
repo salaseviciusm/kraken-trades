@@ -9,7 +9,9 @@ if __name__ == "__main__":
     print("Table showing all buys:")
     print(table[table['type'] == "buy"])
     amount_bought = sum(table[table['type'] == "buy"]['cost'])
-    print(amount_bought)
+    print("Total amount bought: {0}".format(amount_bought))
+
+    print("")
 
     print("Table showing all sells:")
     print(table[table['type'] == "sell"])
